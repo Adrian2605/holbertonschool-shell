@@ -1,2 +1,3 @@
 #!/bin/bash
-find . -type d -not -path "." -not -path ".." -exec basename {} | sort | uniq -c
+find . -type d -not -name "." -not -name ".." | wc -l
+
